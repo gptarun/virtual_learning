@@ -1,0 +1,213 @@
+/* under VIKAS SINGH
+   v1.0 | 0105121117
+   License: none (public domain)
+*/
+
+
+
+/*
+  ========================================
+  Table : for search page
+  ========================================
+*/
+
+table.table1{
+	margin-left:auto;
+    margin-right:auto; 
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4em;
+    font-style: normal;
+	table-layout:fixed;
+    border-collapse:separate;
+}
+.table1 thead th{
+    padding:15px;
+	width: 10%;
+    color:#fff;
+    text-shadow:1px 1px 1px #568F23;
+    border:1px solid #93CE37;
+    border-bottom:3px solid #9ED929;
+    background-color:#9DD929;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.02, rgb(123,192,67)),
+        color-stop(0.51, rgb(139,198,66)),
+        color-stop(0.87, rgb(158,217,41))
+        );
+    background: -moz-linear-gradient(
+        center bottom,
+        rgb(123,192,67) 2%,
+        rgb(139,198,66) 51%,
+        rgb(158,217,41) 87%
+        );
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius:5px 5px 0px 0px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}
+.table1 thead th:empty{
+    background:transparent;
+    border:none;
+}
+.table1 tbody th{
+    color:#fff;
+    text-shadow:1px 1px 1px #568F23;
+    background-color:#9DD929;
+    border:1px solid #93CE37;
+    border-right:3px solid #9ED929;
+    padding:10px 10px;
+    background:-webkit-gradient(
+        linear,
+        left bottom,
+        right top,
+        color-stop(0.02, rgb(158,217,41)),
+        color-stop(0.51, rgb(139,198,66)),
+        color-stop(0.87, rgb(123,192,67))
+        );
+    background: -moz-linear-gradient(
+        left bottom,
+        rgb(158,217,41) 2%,
+        rgb(139,198,66) 51%,
+        rgb(123,192,67) 87%
+        );
+    -moz-border-radius:5px 0px 0px 5px;
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+.table1 tfoot td{
+	width: 17%;
+    color: #9CD009;
+    font-size:32px;
+    text-align:center;
+    padding:10px 0px;
+    text-shadow:1px 1px 1px #444;
+}
+.table1 tfoot th{
+    color:#666;
+}
+.table1 tbody td{
+    padding:10px;
+    text-align:center;
+    background-color:#cbe2c1;
+	overflow: hidden;
+    border: 2px solid #E7EFE0;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+}
+
+/*
+  ========================================
+  Button : for Search Page (Print)
+  ========================================
+*/
+
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	position: relative;
+	padding: 10px 40px;
+	text-align: center; 
+    margin-left:auto;
+    margin-right:auto;
+    float: left;
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	font-size: 25px;
+	color: #FFF;
+	text-decoration: none;	
+}
+.green
+{
+	background-color: #82BF56;
+	border-bottom: 5px solid #669644;
+	text-shadow: 0px -2px #669644;
+}
+
+.blue {
+	background-color: #65d6ba;
+	border-bottom: 5px solid #669644;
+	text-shadow: 0px -2px #669644
+}
+
+.action-button:active
+{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
+}
+
+
+/*
+  ========================================
+  Button : for teacher Page (Share)
+  ========================================
+*/
+
+
+.kbuttonHolder{
+  margin:80px auto;
+  width:400px;
+}
+
+
+.kbutton{
+	border-radius: 50%;
+	float:left;
+	height: 70px;
+	margin: 0 30px 30px 0;
+	position: relative;
+	width: 70px;			
+}
+
+.kbutton:after{
+	color:#e9e6e4;
+	content: "";
+	display: block;
+	font-size: 30px;
+	height: 30px;
+	text-decoration: none;
+	position: absolute;
+	width: 30px;
+}
+
+.tick:after{
+	content: "✔";
+	left:23px;
+	top:20px;
+}
+
+.kbutton:hover{
+	background-image: -webkit-linear-gradient(top, #fff, #c2d2a1);
+	background-image: linear-gradient(top, #fff, #c2d2a1);
+	color:#0088cc;
+}
+
+.tick:hover:after{
+	color:#83d244;
+}
+
+.kbutton:active{
+	background-image: -webkit-linear-gradient(top, #efedec, #f7f4f4);
+	background-image: linear-gradient(top, #efedec, #f7f4f4);
+	box-shadow: 0 3px 5px 0 rgba(0,0,0,.4), inset 0px -3px 1px 1px rgba(204,198,197,.5);
+}
+
+.kbutton:active:after{
+	color:#dbd2d2;
+}

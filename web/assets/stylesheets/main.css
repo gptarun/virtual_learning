@@ -1,0 +1,678 @@
+/* under VIKAS SINGH
+   v1.0 | 0105121117
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+body {
+  background: #293f50;
+  color: #888;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container,
+.grid {
+  margin: 0 auto;
+  width: 960px;
+}
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.grid,
+.col-1-2,
+.col-1-3,
+.col-2-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*
+Search page : Print button section class
+*/
+.temp {
+  padding-top:  20px;		
+  padding-left: 600px;
+  display: inline-block;
+  vertical-align: top;  
+}
+/*
+Attendance page : Save and Edit Button
+*/
+.temp2 {
+  padding-top:  20px;		
+  padding-left: 530px;
+  display: inline-block;
+  vertical-align: top;  
+}
+
+.col-1-2,
+.col-1-3,
+.col-2-3  {
+  display: inline-block;
+  vertical-align: top;
+}
+.col-1-3 {
+  width: 33.33%;
+}
+.col-2-3 {
+  width: 66.66%;
+}
+.col-1-2 {
+	width: 50.00%
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Rows
+  ========================================
+*/
+
+.row,
+.row-alt {
+  min-width: 960px;
+}
+.row {
+  background: #fff;
+  padding: 66px 0 44px 0;
+}
+.row-alt {
+  background: #cbe2c1;
+  background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background:    -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background:         linear-gradient(to right, #a1d3b0, #f6f1d3);
+  padding: 44px 0 22px 0;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1, h2, h3, h4 {
+  color: #648880;
+}
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+strong {
+  font-weight: 400;
+}
+cite,
+em {
+  font-style: italic;
+}
+
+/*
+  ========================================
+  Leads
+  ========================================
+*/
+
+.lead {
+  text-align: center;
+}
+.lead p {
+  font-size: 21px;
+  line-height: 33px;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a {
+  color: #648880;
+  text-decoration: none;
+  text-align: center;
+}
+a:hover {
+  color: #a9b2b9;
+}
+p a {
+  border-bottom: 1px solid #dfe2e5;
+}
+.primary-header a,
+.primary-footer a {
+  color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #648880;
+}
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+
+.btn {
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.btn-default {
+  border: 0;
+  background: #648880;
+  padding: 11px 30px;
+  font-size: 14px;
+}
+.btn-default:hover {
+  background: #77a198;
+}
+.btn-alt {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+}
+.btn-alt:hover {
+  background: #fff;
+  color: #648880;
+}
+.btn-temp {
+  border: 1px solid #808080;
+  background: #648880;
+  padding: 11px 30px;
+  font-size: 14px;
+}
+.mybutton {
+   border-top: 1px solid #96d1f8;
+   background: #65d6ba;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e9c5f), to(#65d6ba));
+   background: -webkit-linear-gradient(top, #3e9c5f, #65d6ba);
+   background: -moz-linear-gradient(top, #3e9c5f, #65d6ba);
+   background: -ms-linear-gradient(top, #3e9c5f, #65d6ba);
+   background: -o-linear-gradient(top, #3e9c5f, #65d6ba);
+   padding: 20px 40px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   border-radius: 40px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 14px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.mybutton:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+.mybutton:active {
+   border-top-color: #0f2116;
+   background: #0f2116;
+}
+
+/*
+  ========================================
+  Forms
+  ========================================
+*/
+.elegant-aero {
+    margin-left:auto;
+    margin-right:auto;
+
+    max-width: 500px;
+    background: #D2E9FF;
+    padding: 20px 20px 20px 20px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #666;
+}
+.elegant-aero h1 {
+    font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 10px 10px 10px 20px;
+    display: block;
+    background: #C0E1FF;
+    border-bottom: 1px solid #B8DDFF;
+    margin: -20px -20px 15px;
+}
+.elegant-aero h1>span {
+    display: block;
+    font-size: 11px;
+}
+
+.elegant-aero label>span {
+    float: left;
+    margin-top: 10px;
+    color: #5E5E5E;
+}
+.elegant-aero label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+.elegant-aero label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.elegant-aero input[type="text"], .elegant-aero input[type="email"], .elegant-aero textarea, .elegant-aero select {
+    color: #888;
+    width: 70%;
+    padding: 0px 0px 0px 5px;
+    border: 1px solid #C5E2FF;
+    background: #FBFBFB;
+    outline: 0;
+    -webkit-box-shadow:inset 0px 1px 6px #ECF3F5;
+    box-shadow: inset 0px 1px 6px #ECF3F5;
+    font: 200 12px/25px Arial, Helvetica, sans-serif;
+    height: 30px;
+    line-height:15px;
+    margin: 2px 6px 16px 0px;
+}
+.elegant-aero textarea{
+    height:100px;
+    padding: 5px 0px 0px 5px;
+    width: 70%;
+}
+.elegant-aero select {
+    background: #fbfbfb url('down-arrow.png') no-repeat right;
+    background: #fbfbfb url('down-arrow.png') no-repeat right;
+   appearance:none;
+    -webkit-appearance:none; 
+   -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+}
+.elegant-aero .button{
+    padding: 10px 30px 10px 30px;
+    background: #66C1E4;
+    border: none;
+    color: #FFF;
+    box-shadow: 1px 1px 1px #4C6E91;
+    -webkit-box-shadow: 1px 1px 1px #4C6E91;
+    -moz-box-shadow: 1px 1px 1px #4C6E91;
+    text-shadow: 1px 1px 1px #5079A3;
+    
+}
+.elegant-aero .button:hover{
+    background: #3EB1DD;
+}
+
+
+.smart-green {
+    margin-left:auto;
+    margin-right:auto;
+
+    max-width: 500px;
+    background: #cbe2c1;
+    padding: 30px 30px 20px 30px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #666;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.smart-green h1 {
+    font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 20px 0px 20px 40px;
+    display: block;
+    margin: -30px -30px 10px -30px;
+    color: #FFF;
+    background: #9DC45F;
+    text-shadow: 1px 1px 1px #949494;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    border-bottom:1px solid #89AF4C;
+
+}
+.smart-green h1>span {
+    display: block;
+    font-size: 11px;
+    color: #FFF;
+}
+
+.smart-green label {
+    display: block;
+    margin: 0px 0px 5px;
+}
+.smart-green label>span {
+    float: left;
+    margin-top: 10px;
+    color: #5E5E5E;
+}
+.smart-green input[type="text"], .smart-green input[type="email"], .smart-green input[type="password"], .smart-green textarea, .smart-green select {
+    color: #555;
+    height: 30px;
+    line-height:15px;
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+    margin-top: 2px;
+    border: 1px solid #E5E5E5;
+    background: #FBFBFB;
+    outline: 0;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    font: normal 14px/14px Arial, Helvetica, sans-serif;
+}
+.smart-green textarea{
+    height:100px;
+    padding-top: 10px;
+}
+.smart-green select {
+    background: url('down-arrow.png') no-repeat right, -moz-linear-gradient(top, #FBFBFB 0%, #E9E9E9 100%);
+    background: url('down-arrow.png') no-repeat right, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FBFBFB), color-stop(100%,#E9E9E9));
+   appearance:none;
+    -webkit-appearance:none; 
+   -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width:100%;
+    height:30px;
+}
+.smart-green .button {
+    background-color: #9DC45F;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-border-radius: 5px;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #949494;
+}
+.smart-green .button:hover {
+    background-color:#80A24A;
+}
+
+
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+
+.logo {
+  /*border-top: 4px solid #648880;*/
+  float: left;
+  font-size: 48px;
+  font-weight: 100;
+  letter-spacing: .5px;
+  line-height: 44px;
+  padding: 40px 0 22px 0;
+  text-transform: uppercase;
+}
+.share {
+  /*border-top: 4px solid #648880;*/
+  color: #000000;
+  float: left;
+  font-size: 24px;
+  font-weight: 100;
+  letter-spacing: .5px;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+.tagline {
+  margin: 66px 0 22px 0;
+  text-align: right;
+}
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+.primary-footer {
+  color: #648880;
+  font-size: 14px;
+  padding-bottom: 44px;
+  padding-top: 44px;
+}
+.primary-footer small {
+  float: left;
+  font-weight: 400;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav {
+  text-align: right;
+}
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
+
+/*
+  ========================================
+  Home
+  ========================================
+*/
+
+.hero {
+  color: #fff;
+  line-height: 44px;
+  padding: 22px 80px 66px 80px;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 36px;
+}
+.hero p {
+  font-size: 24px;
+  font-weight: 100;
+}
+.teaser a:hover h3 {
+  color: #a9b2b9;
+}
+.teaser img {
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 22px;
+  max-width: 100%
+}
+
+/*
+  ========================================
+  Speakers
+  ========================================
+*/
+
+.speaker {
+  margin-bottom: 44px;
+}
+.speaker-info {
+  border: 1px solid #dfe2e5;
+  border-radius: 5px;
+  margin-top: 88px;
+  padding-bottom: 22px;
+  text-align: center;
+}
+.speaker-info img {
+  border-radius: 50%;
+  height: 130px;
+  margin: -66px 0 22px 0;
+  vertical-align: top;
+}
+
+/*
+  ========================================
+  Venue
+  ========================================
+*/
+
+.venue-theatre {
+  margin-bottom: 66px;
+}
+.venue-hotel {
+  margin-bottom: 22px;
+}
+.venue-map {
+  height: 264px;
+}
+
+/*
+  ========================================
+  Register
+  ========================================
+*/
+
+.why-attend {
+  list-style: square;
+  margin: 0 0 22px 30px;
+}
+form {
+  margin-bottom: 22px;
+}
+input,
+select,
+textarea {
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.register-group label {
+  color: #648880;
+  cursor: pointer;
+  font-weight: 400;
+}
+.register-group input,
+.register-group select,
+.register-group textarea {
+  border: 1px solid #c6c9cc;
+  border-radius: 5px;
+  color: #888;
+  display: block;
+  margin: 5px 0 27px 0;
+  padding: 5px 8px;
+}
+.register-group input,
+.register-group textarea {
+  width: 100%;
+}
+.register-group select {
+  height: 34px;
+  width: 60px;
+}
+.register-group textarea {
+  height: 78px;
+}
